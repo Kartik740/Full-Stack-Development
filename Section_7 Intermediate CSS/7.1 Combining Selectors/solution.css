@@ -1,0 +1,25 @@
+/* Group */
+h1,
+h2 {
+  color: blueviolet;
+}
+
+/* Child */
+.box > p {
+  color: firebrick;
+}
+
+/* Descendent (hierarchy selection (space in between ))*/
+.box li {
+  color: blue;
+}
+
+/* Chained (means using different selector within a element (no space) )*/
+li.done {
+  color: green;
+}
+
+/* Multiple Combiners */
+ul p.done {
+  font-size: 0.5rem;
+}

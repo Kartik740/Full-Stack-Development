@@ -1,0 +1,90 @@
+body{
+    background-color: #ffd93d !important;
+}
+
+.main{
+    margin: 20px;
+    border-radius: .75rem;
+    border: 3px solid black;
+    box-shadow: 5px 5px;
+    background-color: #fff6e7 !important;
+}
+
+.grid-container{
+    display: grid;
+    gap: 13px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+}
+.feat{
+    border-radius: .75rem;
+    border: 3px solid black;
+    box-shadow: 5px 5px;
+    padding: 20px;
+}
+
+.feat p{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+@media(min-width:992px){
+    .main{
+        margin: 80px;
+        margin-top: 60px;
+        border-radius: .75rem;
+        border: 3px solid black;
+        box-shadow: 5px 5px;
+        background-color: #fff6e7 !important;
+    }
+    #about-me{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .grid-container{
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    
+}
+
+.nav-link{
+    font-weight: 700 !important;
+}
+
+#hero .btn{
+    border-radius: .75rem;
+
+    box-shadow: 5px 5px;
+}
+
+nav{
+    background-color: #fff6e7 !important;
+}
+
+.text-about{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.heading-about{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.feature.col{
+    border-radius: .75rem;
+    border: 3px solid black;
+    box-shadow: 5px 5px;
+    background-color: white !important;
+   
+}
+
