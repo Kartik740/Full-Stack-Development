@@ -1,0 +1,16 @@
+<%- include("partials/header.ejs") %>
+      <% if (locals.icon && locals.data) { %>
+            <h1> <%=data.name %> weather forecast</h1>
+            <img class="weather-icon" src="<%=icon %>" alt="icon" />
+            <p><%= data.weather[0].description %></p>
+            <h1><%= data.main.temp %></h1>
+            <h3>Weather Today in <%= data.name %></h3>
+            <p>Min Temp | Max Tem</p>
+            <p><%= data.main.temp_min%>° | <%= data.main.temp_max%>°</p>
+      <% } %>
+      <div class="main-box">
+            
+        
+      </div>
+    
+<%- include("partials/footer.ejs") %>
