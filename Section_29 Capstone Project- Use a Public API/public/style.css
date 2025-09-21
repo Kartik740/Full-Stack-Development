@@ -33,6 +33,23 @@ body {
   opacity: 0.3;
 }
 
+.detail{
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.detail div{
+  opacity: 0.3;
+  border: solid black 5px;
+  border-radius: 20px;
+  background-color: white;
+  height: 180px;
+  width: 180px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .container-fluid .navbar-brand{
   color: white;
 }
@@ -42,6 +59,7 @@ body {
 footer{
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
 footer p{
   
@@ -52,4 +70,22 @@ footer p{
     height: 100vh;
     width: 100vw;
     object-fit: cover;
+}
+
+.description{
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+p{
+  font-size: large;
+}
+
+.temperature{
+  font-size: 80px;
+}
+
+.description p{
+  margin-top: 30px;
+  font-size: x-large;
 }

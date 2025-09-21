@@ -1,12 +1,25 @@
 <%- include("partials/header.ejs") %>
       <% if (locals.icon && locals.data) { %>
             <h1> <%=data.name %> weather forecast</h1>
-            <img class="weather-icon" src="<%=icon %>" alt="icon" />
-            <p><%= data.weather[0].description %></p>
-            <h1><%= data.main.temp %></h1>
+            <div class="description">
+                  <img class="weather-icon" src="<%=icon %>" alt="icon" />
+                  <p><%= data.weather[0].description %></p>   
+            </div>
+            
+            <h1 class="temperature"><%= data.main.temp %>°C</h1>
             <h3>Weather Today in <%= data.name %></h3>
             <p>Min Temp | Max Tem</p>
             <p><%= data.main.temp_min%>° | <%= data.main.temp_max%>°</p>
+            <div class="detail">
+                  <div class="feel">
+                        <img src="/images/temp_feel.svg" alt="temperature feel icon" />
+                        <p>Temperature Feels</p>
+                        <p
+                  </div>
+                  <div class="humidity"></div>
+                  <div class="pressure"></div>
+                  <div class="w-speed"></div>
+            </div>
       <% } %>
       <div class="main-box">
             
