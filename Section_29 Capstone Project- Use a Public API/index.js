@@ -34,9 +34,9 @@ app.post("/search", async (req,res) =>{
 
     res.render("index", { icon : iconUrl , data : weather.data });
   } catch (error) {
-    console.log(req.body.location);
+
     console.log(JSON.stringify(error.response.data));
-    // res.render("index.ejs", { content: JSON.stringify(error.response.data) });
+    res.render("index.ejs", { content: error.response.data.message });
   }
 })
 

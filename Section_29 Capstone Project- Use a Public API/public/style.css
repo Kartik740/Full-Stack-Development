@@ -25,29 +25,34 @@ body {
   height: 100px;
 }
 
-.main-box{
-  height: 50%;
+.start-box{
+  height: 20%;
+  border: solid black 4px;
   width: 50%;  
   border-radius: 20px;
-  background-color: white;
-  opacity: 0.3;
+  background-color: rgba(255, 255, 255,0.3);
+  
 }
 
 .detail{
   display: inline-flex;
   justify-content: center;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
-.detail div{
-  opacity: 0.3;
-  border: solid black 5px;
+.detail1{
+
+  border: solid black 4px;
   border-radius: 20px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.3);
   height: 180px;
   width: 180px;
   margin-left: 10px;
   margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-fluid .navbar-brand{

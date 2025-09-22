@@ -11,19 +11,46 @@
             <p>Min Temp | Max Tem</p>
             <p><%= data.main.temp_min%>° | <%= data.main.temp_max%>°</p>
             <div class="detail">
-                  <div class="feel">
-                        <img src="/images/temp_feel.svg" alt="temperature feel icon" />
-                        <p>Temperature Feels</p>
-                        <p
+                  <div class="detail1 feel">
+                        <img src="/images/temp_feel.svg" alt="temperature feel icon" height="50px" style="margin: 0px 10px;"/>
+                        <div>
+                              <p style="margin-bottom: 0px;">Temp Feels</p>
+                              <p><%= data.main.feels_like %> °C</p>
+                        </div>
                   </div>
-                  <div class="humidity"></div>
-                  <div class="pressure"></div>
-                  <div class="w-speed"></div>
+                  <div class="detail1 humidity">
+                        <img src="/images/humidity.svg" alt="humidity icon" height="50px" style="margin: 0px 10px;"/>
+                        <div>
+                              <p style="margin-bottom: 0px;">Humidity</p>
+                              <p><%= data.main.humidity %> %</p>
+                        </div>
+                  </div>
+                  <div class="detail1 pressure">
+                        <img src="/images/pressure.svg" alt="Pressure icon" height="50px" style="margin: 0px 10px;"/>
+                        <div>
+                              <p style="margin-bottom: 0px;">Pressure</p>
+                              <p><%= data.main.pressure %> Pa</p>
+                        </div>
+                  </div>
+                  <div class="detail1 w-speed">
+                        <img src="/images/wind_speed_png.png" alt="Wind speed icon" height="50px" style="margin: 0px 10px;"/>
+                        <div>
+                              <p style="margin-bottom: 0px;">Temp Feels</p>
+                              <p><%= data.wind.speed %> m/s</p>
+                        </div>
+                  </div>
             </div>
-      <% } %>
-      <div class="main-box">
             
+      <% }else if(locals.content){ %>
+      <div class="start-box" style="text-align: center; font-size: xx-large; font-weight: 900; color: black;">
+           <p style="margin-top: 20px;"><%= content %>, check spelling</p> 
         
       </div>
-    
+    <% }else{ %>
+      <div class="start-box" style="text-align: center; font-size: xx-large; font-weight: 900; color: black;">
+           <p style="margin-top: 20px;">Please enter the City/Town name on the searchbar
+                  in order to get weather data.</p> 
+        
+      </div>
+      <% } %>
 <%- include("partials/footer.ejs") %>
